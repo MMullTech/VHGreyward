@@ -17,7 +17,7 @@ body {
     /* Swap background-image URL with your own subtle stone or dark parchment texture */
     background-image: url('images/dark_forest.jpg');
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #d1ccbf;
