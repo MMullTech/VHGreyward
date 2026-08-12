@@ -1,0 +1,121 @@
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0d0c;
+    /* Swap background-image URL with your own subtle stone or dark parchment texture */
+    background-image: radial-gradient(circle, rgba(15, 23, 18, 0.8) 0%, rgba(5, 7, 6, 0.95) 100%), url('images/dark-texture.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #d1ccbf;
+    font-family: 'Lora', serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(12, 15, 13, 0.75);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    padding: 3rem 2.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* TYPOGRAPHY */
+.author-name {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    color: #a39575;
+    margin-top: 1rem;
+}
+
+.book-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #e2b755; /* Warm Antique Gold */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    margin: 0.5rem 0;
+}
+
+.tagline {
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    color: #8c8573;
+}
+
+.emblem {
+    max-width: 90px;
+    height: auto;
+    filter: drop-shadow(0 0 8px rgba(226, 183, 85, 0.2));
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(226, 183, 85, 0.4), transparent);
+    margin: 2rem auto;
+}
+
+/* HERO HOOK */
+.hero-hook blockquote {
+    font-family: 'Cinzel', serif;
+    font-size: 1.35rem;
+    color: #f1e6cf;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+/* BLURB TEXT */
+.blurb-content p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.blurb-content strong {
+    color: #e2b755;
+}
+
+/* CALL TO ACTION */
+.cta-section {
+    margin-top: 2.5rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    color: #0b0d0c;
+    background: linear-gradient(135deg, #e2b755 0%, #a37c27 100%);
+    padding: 1rem 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #f3ca6a 0%, #b88d32 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(226, 183, 85, 0.3);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    .container { padding: 1.5rem; }
+    .book-title { font-size: 1.8rem; }
+    .hero-hook blockquote { font-size: 1.1rem; }
+    .blurb-content p { text-align: left; }
+}
