@@ -8,8 +8,9 @@
 body {
     background-color: #0b0d0c;
     /* Swap background-image URL with your own subtle stone or dark parchment texture */
-    background-image: radial-gradient(circle, rgba(15, 23, 18, 0.8) 0%, rgba(5, 7, 6, 0.95) 100%), url('images/dark-texture.jpg');
+    background-image: url('images/dark_forest.jpg');
     background-position: center;
+    background-repeat: no-repeat
     background-size: cover;
     background-attachment: fixed;
     color: #d1ccbf;
@@ -22,9 +23,9 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background: rgba(12, 15, 13, 0.75);
+    background: transparent;
     border: 1px solid rgba(212, 175, 55, 0.15);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    box-shadow: none;
     padding: 3rem 2.5rem;
     border-radius: 4px;
     text-align: center;
